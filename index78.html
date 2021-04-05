@@ -1,0 +1,28 @@
+<html>
+ <head>
+     <title>My Family</title>
+    </head>
+ <body>
+     <h1>My Family</h1>
+     <img id=Photo src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg">
+     <button type="button" id=change onclick="nextslide()">Next</button>
+     <script>
+         var album=[
+        "https://i.pinimg.com/originals/87/b8/3b/87b83ba77a10a1d3313ed7872918524d.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy7rJbsjButMS3x_iWwBer-b9mjkLmEbeD6A&usqp=CAU",
+        "https://st.depositphotos.com/1077687/1903/v/950/depositphotos_19036597-stock-illustration-cartoon-boy.jpg",
+        "https://freepikpsd.com/wp-content/uploads/2019/10/cartoon-sister-png-4-Transparent-Images.png",
+        "https://i.pinimg.com/originals/d5/6c/d2/d56cd25436d0d3f56ad2f143750f7455.png",
+        "https://i.pinimg.com/originals/db/f5/08/dbf508e27715f8ed3730bec349092789.jpg",
+        "https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg"];
+        var i=0;
+        function nextslide(){
+            document.getElementById(Photo).src=album[i];
+            i++;
+            if (i==6){
+                i=0;
+            }
+        }
+         </script>
+ </body>
+</html>
