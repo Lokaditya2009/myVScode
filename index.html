@@ -1,28 +1,48 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Project on console</title>
+        <title>PIZZERIA</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
     </head>
     <body>
-      <p>Visual code is an integrated development environment from Microsoft.</p>
-      <p>Console is a simple debugging aid.</p>
-      <script>
-          var first_name="Pullagura"; 
-            console.log =(first_name);
-            var second_name="Lokaditya";
-            console.log=(second_name);
-            var full_name=(first_name.concat(second_name));
-            console.log="full_name";
-            var a="6";
-            var b="2";
-            var add=(a+b);
-            console.log=(add);
-           var sub=(a-b);
-           console.log=(sub);
-           var div=(a/b);
-           console.log=(div);
-           var multi=(a*b);
-           console.log=(multi);
+        
            
-      </script>  
+            <div class ="topnav">
+<a class="active" href="#">Pizzaria</a>     
+<div class="topnav-right">          
+<a href="#showmenu">Show menu</a>
+<a href="#addmenu">Add your toppings</a>
+    </div>     
+        </div>
+       
+     <div class="row" id="showmenu">
+         <div class="img_div">
+            <img class="img-responsive" src="pizza.jpg">
+         </div>
+<div class="menu_div">
+<button id="menu_list" onclick="getmenu()">Show menu</button>
+</div>
+<div id="display_menu"></div>
+     </div>   
+    <div class="newRow" id="addmenu">
+<div class="block1">
+    <input type="text" placeholder="Enter your toppings" id="add_item"><br>
+    <button type="button" id="add_toppings" onclick="addmenu()">Recommend a new pizza</button>
+</div>
+<div class="block2">
+    <div id="display_addedmenu"></div>
+</div>
+
+<div>
+    <img class="img-responsive" src="dominos-pizza.webp">
+</div>
+
+    </div>
     </body>
 </html>
