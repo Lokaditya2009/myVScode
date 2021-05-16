@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>PIZZERIA</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="main.js"></script>
-    </head>
-    <body>
-        
-           
-            <div class ="topnav">
-<a class="active" href="#">Pizzaria</a>     
-<div class="topnav-right">          
-<a href="#showmenu">Show menu</a>
-<a href="#addmenu">Add your toppings</a>
-    </div>     
-        </div>
-       
-     <div class="row" id="showmenu">
-         <div class="img_div">
-            <img class="img-responsive" src="pizza.jpg">
-         </div>
-<div class="menu_div">
-<button id="menu_list" onclick="getmenu()">Show menu</button>
-</div>
-<div id="display_menu"></div>
-     </div>   
-    <div class="newRow" id="addmenu">
-<div class="block1">
-    <input type="text" placeholder="Enter your toppings" id="add_item"><br>
-    <button type="button" id="add_toppings" onclick="addmenu()">Recommend a new pizza</button>
-</div>
-<div class="block2">
-    <div id="display_addedmenu"></div>
-</div>
+<head>
+<style>
+body{
+	background-image: url("racing.gif");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
 
-<div>
-    <img class="img-responsive" src="dominos-pizza.webp">
-</div>
+#note
+{
+	color: white;
+}
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Car Racing  Game status</title>
+</head>
+<body onload="add();">
+<center>
+	
+<h1>Car Racing</h1>  
+<h1>Game status : <span id="game_status"></span></h1>
+<canvas id="myCanvas" width="800" height="600">
 
-    </div>
-    </body>
+</canvas>
+<br>
+<h4 id="note">
+	<b class="text-danger">NOTE : </b> IF CAR IS NOT VISIBLE PRESS ANY ARROW KEY</h4>
+
+</center>
+<script src="main.js">
+</script>
+</body>
 </html>
